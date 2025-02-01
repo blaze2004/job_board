@@ -1,0 +1,80 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+.homePage{
+  height: 100vh;
+  width: 100vw;
+}
+.homePage .header{
+  max-height: max-content;
+  max-width: 100%;
+}
+.homePage .body{
+  height: 140vh;
+  width: 100%;
+}
+.homePage .header img{
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.header Button{
+  margin: 5px;
+}
+.heroSection{
+  padding: 10px;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.heroSection .headingContainer{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection .headingContainer .heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.headingContainer .subheading{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.heroSection .front-image{
+  width: 60%;
+  height: 100%;
+}
+.heroSection .front-image img{
+  height: 400px;
+  width: 400px;
+}
+.featuredJobsCatg{
+  padding: 10px;
+  margin-top: 40px;
+  height: max-content;
+}
+.featuredJobsCatg .heading{
+  text-align: center;
+  font-weight:900;
+  font-size: 2rem;
+}
+.featuredJobsCatg .jobCatCardsContainer{
+  margin-top: 40px;
+}
+.featuredJobsCatg .jobCatCardsContainer .jobCatCard{
+  transition: transform 0.1s ease-in-out;
+}
+.featuredJobsCatg .jobCatCardsContainer .jobCatCard:hover{
+  transform: scale(1.12);
+}
+.footer{
+  margin-top: 40px;
+}
