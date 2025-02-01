@@ -13,8 +13,8 @@ router.post("/login", login);
 router.post("/signup", signup);
 router.get("/dashboard", verifyAccessToken, dashboardController);
 router.post("/refreshToken", refreshTokenController);
-router.get("/", () => {
-  res.sendFile(path.join(__dirname, "../job_board/build", "index.html"));
+router.get("/", (_, res) => {
+  res.sendFile(path.join(__dirname, "../../job_board/build", "index.html"));
 });
 
 module.exports = router;

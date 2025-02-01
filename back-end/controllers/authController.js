@@ -19,6 +19,10 @@ const login = async (req, res) => {
   const accessToken = generateAccessToken(payLoad);
   const refreshToken = generateRefreshToken(payLoad);
 
+  res.cookie("accessToken", accessToken, {
+    httpOnly: true,
+  });
+
   res.cookie("refreshToken", refreshToken, {
     httpOnly: true,
   });
